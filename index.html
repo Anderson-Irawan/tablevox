@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TableVox</title>
+<meta name="description" content="TableVox: a voice waiter on every table.">
+<link rel="preload" href="fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="main.js"></script>
+</head>
+<body class="is-loading">
+<div id="stage" class="stage" aria-hidden="true"></div>
+
+<div class="loader" id="loader" role="status">
+  <span class="loader-mark"></span>
+  <span class="loader-label">Setting the tables</span>
+</div>
+
+<header class="hero" id="hero">
+  <p class="sticker sticker-orange">Just say your order</p>
+  <h1 class="hero-title"><span>Table</span><span>Vox</span></h1>
+  <p class="hero-line">A voice waiter on every table.</p>
+</header>
+
+<section class="slide-text" id="slideText" aria-live="polite">
+  <p class="sticker" id="kicker"></p>
+  <h2 class="slide-title" id="slideTitle"></h2>
+  <p class="slide-line" id="slideLine"></p>
+  <ul class="slide-points" id="slidePoints"></ul>
+</section>
+
+<div class="chat" id="chat" aria-label="Conversation"></div>
+
+<aside class="ops" id="ops" aria-label="Kitchen and stock">
+  <article class="ticket" id="ticket">
+    <header class="ticket-head"><strong>Table T4</strong><span>#47</span></header>
+    <ul class="ticket-lines">
+      <li><b>1×</b> Special Fried Rice <small>spicy</small></li>
+      <li><b>1×</b> Prawn Crackers</li>
+      <li><b>1×</b> Iced Tea <small>cold</small></li>
+    </ul>
+    <p class="ticket-state" id="ticketState">New</p>
+  </article>
+  <article class="stock">
+    <header class="stock-head"><strong>Stock</strong><span>live</span></header>
+    <div id="bars"></div>
+  </article>
+</aside>
+
+<nav class="dock" aria-label="Presentation">
+  <span class="dock-brand"><i class="dock-dot"></i>TableVox</span>
+  <span class="dock-label" id="dockLabel">01</span>
+  <span class="dock-buttons">
+    <button class="dock-btn" id="prev" type="button" aria-label="Previous">←</button>
+    <button class="dock-btn dock-btn-main" id="next" type="button" aria-label="Next">→</button>
+    <button class="dock-btn" id="auto" type="button" aria-pressed="false" aria-label="Play automatically">Auto</button>
+    <button class="dock-btn" id="replay" type="button" aria-label="Replay this scene">↺</button>
+  </span>
+</nav>
+
+<noscript><p class="noscript">This presentation needs JavaScript.</p></noscript>
+</body>
+</html>

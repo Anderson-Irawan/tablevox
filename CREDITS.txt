@@ -1,0 +1,12 @@
+Warung NextGen presentation - credits
+
+3D models by Kenney (www.kenney.nl), Creative Commons Zero (CC0):
+- Mini Characters 2.0 (assets/characters)
+- Food Kit 2.0 (assets/food)
+- Furniture Kit 1.0 (assets/furniture)
+Licence texts are next to each set (License.txt).
+
+three.js (MIT), bundled in vendor/.
+Fonts: Space Grotesk and Inter (SIL Open Font License), bundled in fonts/.
+
+The table waiter (the robot face) and the room are our own geometry.
